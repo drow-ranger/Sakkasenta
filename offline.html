@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sakkasenta</title>
+    <meta name="description" content="Sakkasenta APP" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="/img/icon-152.png" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000" />
+</head>
+
+<body>
+    <div class="navbar-fixed hide-on-large-only">
+        <nav>
+            <div class="nav-wrapper">
+                <ul class="botnav row"></ul>
+            </div>
+        </nav>
+    </div>
+    <nav class="nav-extended" role="navigation">
+        <div class="nav-wrapper container">
+            <span>
+                <button onclick="history.back()" class="btn-flat sidenav-trigger" data-target="nav-mobile">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+            </span>
+
+            <a id="logo-container" href="/" class="brand-logo"><span>Sakkasenta</span></a>
+
+            <ul class="topnav right hide-on-med-and-down"></ul>
+        </div>
+    </nav>
+
+    <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-red-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+                <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="offline" class="container center">
+            <div class="row" style="margin-top: 10px;">
+                <div class="col m3"></div>
+                <div class="col s12 m6">
+                    <div class="card card-offline">
+                        <div class="card-content">
+                            <h5>Maybe you're offline.</h5>
+                        </div>
+                        <div class="card-image">
+                            <img src="/img/offline.jpg" height="100%" />
+                        </div>
+                        <div class="card-content">
+                            <h6>Please check your connection.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer hide-on-med-and-down red darken-4" style="display: none;">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Made with <span class="heart">❤</span> in Semarang
+                <a class="grey-text text-lighten-4 right" href="https://revolut1on.com">Go to Revolut1on</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/offline.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Kalam&family=BenchNine&display=swap");
+
+:root {
+  --primary: #fff;
+  --secondary: #dc052d;
+  --hover: #e5e5e5;
+  --shadow: #666;
+  --heart: #e25555;
+}
+
+body {
+  font-family: "BenchNine", "Kalam", "Handlee", sans-serif;
+  font-weight: 500;
+  font-size: large;
+  background-color: var(--hover);
+}
+
+/* Nav Style */
+nav {
+  background: var(--primary);
+  border-bottom: 4px solid var(--secondary);
+}
+
+nav a {
+  color: var(--primary);
+}
+
+nav li a {
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+
+.navbar-fixed {
+  height: 0px;
+  margin-bottom: 0;
+}
+
+.navbar-fixed nav {
+  bottom: 0;
+  border-bottom: 0;
+}
+
+.navbar-fixed nav ul {
+  text-align: center;
+}
+
+.navbar-fixed nav ul li {
+  display: inline;
+  float: none;
+}
+
+.navbar-fixed nav ul li a {
+  display: inline-block;
+}
+
+ul li a.waves-effect:hover {
+  color: var(--secondary);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+/* Tab Style */
+.tabs {
+  border-top-left-radius: 25px !important;
+  border-top-right-radius: 25px !important;
+  border-bottom: 4px solid var(--secondary);
+}
+
+.tab-content {
+  background-color: var(--secondary) !important;
+}
+
+.collapsible {
+  margin-top: 0 !important;
+}
+
+.brand-logo span {
+  color: black;
+  font-family: "Handlee", cursive;
+  font-weight: 800;
+}
+
+/* Card */
+.card,
+.card-panel {
+  border-radius: 25px !important;
+}
+
+.card:hover {
+  background-color: var(--hover);
+}
+
+.card-offline:hover {
+  background-color: var(--primary);
+}
+
+.card-image img {
+  width: 4rem;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.card-reveal .info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.logo-img {
+  height: 200px;
+  width: 200px;
+  margin: 5% auto;
+  filter: drop-shadow(0px 0px 5px var(--shadow));
+}
+
+/* Icon Style */
+.detail-team-icons,
+.detail-about-icons {
+  margin-right: 15px;
+}
+
+.detail-squad-icons {
+  margin: 5px 10px 0 5px;
+}
+
+.detail-competition-icons {
+  margin-top: 5%;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.heart {
+  color: var(--heart);
+}
+
+/* Loading */
+.preloader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.page-footer {
+  margin-top: 5%;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--heart);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    font-size: x-large !important;
+  }
+
+  .logo-img {
+    margin-top: 35%;
+  }
+
+  #body-content,
+  #competitionTabs,
+  #teamTabs {
+    margin-bottom: 20%;
+  }
+
+  .fixed-action-btn {
+    margin-bottom: 40px !important;
+  }
+}
